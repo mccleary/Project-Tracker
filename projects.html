@@ -56,7 +56,6 @@
   	</div><!-- /orange -->
 
 
-
     <!-- *****************************************************************************************************************
      PRODUCTS LIST
      ***************************************************************************************************************** -->
@@ -82,6 +81,9 @@
 
     <div class="container mtb">
         <div class="row">
+            <div class="col-lg-6">
+                <img class="img-responsive-project" src="public/assets/img/product2.jpg" alt="">
+            </div>
 
             <div class="col-lg-6">
                 <h4>Project Two</h4>
@@ -90,34 +92,39 @@
                 <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
                 <p><br/><a href="/products/product2" class="btn btn-theme">Learn More</a></p>
             </div>
+        </div>  <! --/row -->
+    </div>   <! --/container -->
+
+    <div class="container mtb">
+        <div class="hline"></div>
+    </div>
+
+
+      <!-- *************   IMAGE UPLOADER  **************** -->
+    <div class="container mtb">
+        <div class="row">
+            <div class="col-lg-6">
+              <p> Upload Project Image here: </p>
+                <img class="img-responsive-project" id="output_image">
+                <input type="file" accept="image/*" onchange="preview_image(event)">
+            </div>
 
             <div class="col-lg-6">
-                <img class="img-responsive-project" src="public/assets/img/product2.jpg" alt="">
+                <h4>Project Name Here: </h4>
+                <p><input type="text" name="project title" value="" cols="30"></p>
+
+                <p><form class="img-upload" action="projects.html" method="post">
+
+                  <p>Summary about the project: </p>
+                  <textarea rows="10" cols="75" id="project-description"></textarea>
+
+
+                  <script src="projects.js"></script>
+                </form></p>
             </div>
-
-            <!-- *************   IMAGE UPLOADER  **************** -->
-            <div id="img-upload" class="col-lg-6">
-              <form class="img-upload" action="projects.html" method="post">
-
-                <p>Enter your Project Name here: </p>
-                <input type="text" name="project title" value="" cols="40">
-
-                <p>Write a summary about the project here: </p>
-                <textarea rows="15" cols="75" id="project-description"></textarea>
-
-                <p> Upload Project Image here: </p>
-
-                <input type="file" onchange="previewFile()"><br>
-                <img src="" height="200" alt="Image preview...">
-
-                <script src="projects.js"></script>
-
-              </form>
-            </div>
-            <!-- *************   IMAGE UPLOADER END **************** -->
-        </div><! --/row -->
-    </div><! --/container -->
-
+        </div>  <! --/row -->
+    </div>   <! --/container -->
+      <!-- *************   IMAGE UPLOADER END **************** -->
 
 
     <!-- ***********************************************

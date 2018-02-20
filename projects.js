@@ -1,13 +1,11 @@
-function previewFile() {
-  var preview = document.querySelector('img');
-  var file    = document.querySelector('input[type=file]').files[0];
-  var reader  = new FileReader();
-
-  reader.addEventListener("load", function () {
-    preview.src = reader.result;
-  }, false);
-
-  if (file) {
-    reader.readAsDataURL(file);
-  }
+// function to upload image
+function preview_image(event)
+{
+var reader = new FileReader();
+reader.onload = function()
+{
+var output = document.getElementById('output_image');
+output.src = reader.result;
+};
+reader.readAsDataURL(event.target.files[0]);
 }
