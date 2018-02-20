@@ -94,8 +94,30 @@
             <div class="col-lg-6">
                 <img class="img-responsive-project" src="public/assets/img/product2.jpg" alt="">
             </div>
+
+            <!-- *************   IMAGE UPLOADER  **************** -->
+            <div id="img-upload" class="col-lg-6">
+              <form class="img-upload" action="projects.html" method="post">
+
+                <p>Enter your Project Name here: </p>
+                <input type="text" name="project title" value="" cols="40">
+
+                <p>Write a summary about the project here: </p>
+                <textarea rows="15" cols="75" id="project-description"></textarea>
+
+                <p> Upload Project Image here: </p>
+
+                <input type="file" onchange="previewFile()"><br>
+                <img src="#" height="200" width="200" alt="Image preview...">
+
+                <script src="projects.js"></script>
+
+              </form>
+            </div>
+            <!-- *************   IMAGE UPLOADER END **************** -->
         </div><! --/row -->
     </div><! --/container -->
+
 
 
     <!-- ***********************************************
