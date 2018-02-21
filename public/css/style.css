@@ -58,8 +58,8 @@ img {
 }
 
 .img-responsive-project {
-	height: auto;
-	width: auto;
+	height: 300px;
+	width: 450px;
 }
 
 a {
